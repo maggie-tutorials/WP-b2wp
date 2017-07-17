@@ -370,7 +370,9 @@ footer li.signup-link a:hover {
 }
 
 /* BLOG */
-.post, .widget {
+.post,
+.widget,
+#comments .comments-wrap {
   position: relative;
   border: solid 1px #ddd;
   background: white;
@@ -381,7 +383,9 @@ footer li.signup-link a:hover {
 }
 
 .post header,
-.post .post-excerpt {
+.post .post-excerpt,
+.post .post-body,
+#comments .comments-wrap {
   padding: 20px;
 }
 
@@ -474,6 +478,42 @@ footer li.signup-link a:hover {
   background: #8bc653;
 }
 
+/* Comments */
+#comments h3 {
+  text-align: center;
+}
+
+#comments h4 {
+  font-size: 1.3em;
+}
+
+#comments ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#comments ol li {
+  background: rgba(0,0,0,0.06);
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+#comments ol li ol.children {
+  padding: 0;
+  list-style: none;
+  font-size: 0.96em;
+}
+
+#leave-comment {
+  margin: 40px 0 0;
+  padding: 20px 0 0;
+  border-top: solid 1px #eee;
+}
 /* Custom Icon Sprites */
 i.ci {
   display: inline-block;
